@@ -63,3 +63,10 @@ Cypress.Commands.add('registerUser', (name, email, password) => {
     cy.get('h2.title.text-center').should('be.visible').and('contain.text', 'Account Created!');
     cy.contains('Continue').click();
 });
+
+Cypress.Commands.add('loginUser', (email, password) => {
+    cy.get('input[data-qa="login-email"]').type(email);
+    cy.get('input[data-qa="login-password"]').type(password);
+    cy.get('button[data-qa="login-button"]').click();
+    cy.get('li > a').should('be.visible').and('contain.text', 'Logged in as Admin');
+});
