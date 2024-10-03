@@ -9,9 +9,7 @@
 
 ## 🌟 About
 
-This project showcases automated testing of the Automation Exercise web application using Cypress. It includes several test cases that cover user registration, login, account deletion, and other functionalities to ensure the application works as expected.
-
-Site published at: https://github.com/Jongita/cypress-demo
+This project showcases automated testing of the [Automation Exercise](https://www.automationexercise.com/) web application using Cypress. It includes several test cases that cover user registration, login, account deletion, and other functionalities to ensure the application works as expected.
 
 ## 🎯 Project features/goals
 
@@ -70,13 +68,9 @@ Would you like to run this project locally? Open your terminal and follow these 
     npm run cypress:ci
     `
 
-### 🛠️ CI Integration
+### 📈 Continuous Integration
 
-This project uses GitHub Actions to run Cypress tests automatically on code changes. The workflow file (.github/workflows/cypress.yml) includes steps to:
-
--   Check out the code
--   Install Node.js dependencies
--   Run Cypress tests in headless mode using Chrome.
+This project is configured to run Cypress tests automatically using GitHub Actions. The workflow is triggered on code pushes and pull requests to the main branch.
 
 ## 🎉 Conclusion
 
