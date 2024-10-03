@@ -1,7 +1,6 @@
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
-[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
 # Automated Tests with Cypress for Web Application
 
@@ -55,15 +54,11 @@ Would you like to run this project locally? Open your terminal and follow these 
     ```sh
     npm install
     ```
-3. Install Cypress as a development dependency
-    ```sh
-    npm install --save-dev cypress
-    ```
-4. Run Cypress in interactive mode
+3. Run Cypress in interactive mode
     ```sh
     npm run test
     ```
-5. Run Cypress in CI mode
+4. Run Cypress in CI mode
     ```sh
     npm run cypress:ci
     ```

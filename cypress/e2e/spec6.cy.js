@@ -31,7 +31,7 @@ describe('Contact Us Form', () => {
             cy.on('window:alert', (text) => {
                 expect(text).to.contains('Press OK');
             });
-            cy.on('window:confirm', () => true); // Automatically click OK
+            cy.on('window:confirm', () => true);
 
             // 9. Verify success message is visible
             cy.contains('Success! Your details have been submitted successfully.').should('be.visible');
