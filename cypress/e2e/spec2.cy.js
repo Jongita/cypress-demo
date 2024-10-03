@@ -1,16 +1,12 @@
-const pageUrl = 'https://www.automationexercise.com';
 
 describe('Login User with correct email and password', () => {
 
     it('should create, login and delete the user account successfully', () => {
-        // 1. Launch browser and 2. Navigate to URL
-        cy.visit(pageUrl);
-
+        // 1/2. Launch browser and navigate to URL
         // 3. Verify that home page is visible successfully
-        cy.get('.logo img').should('be.visible');
-        cy.get('.shop-menu').should('be.visible');
+        cy.launchBrowser();
 
-        // Register user
+        // Register user for creating and delete later on
         cy.registerUser('Admin', 'admin@gmail8.com', '123456');
 
         // Logout user

@@ -24,6 +24,12 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+Cypress.Commands.add('launchBrowser', () => {
+    const pageUrl = 'https://www.automationexercise.com'
+    cy.visit(pageUrl);
+    cy.get('.logo img').should('be.visible');
+    cy.get('.shop-menu').should('be.visible');
+});
 
 Cypress.Commands.add('deleteAccount', () => {
     cy.contains('Delete Account').click();

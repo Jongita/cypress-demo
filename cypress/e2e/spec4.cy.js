@@ -10,8 +10,8 @@ describe('Logout User', () => {
         cy.get('.logo img').should('be.visible');
         cy.get('.shop-menu').should('be.visible');
 
-        // Register user
-        cy.registerUser('Admin', 'admin@gmail14.com', '123456');
+        // Register user for creating and delete later on
+        cy.registerUser('Admin', 'admin@gmail15.com', '123456');
 
         // Logout user
         cy.get('a[href="/logout"]').click();
@@ -23,7 +23,7 @@ describe('Logout User', () => {
         cy.contains('Login to your account').should('be.visible');
 
         // 6: Enter correct email address and password
-        cy.get('input[data-qa="login-email"]').type('admin@gmail14.com');
+        cy.get('input[data-qa="login-email"]').type('admin@gmail15.com');
         cy.get('input[data-qa="login-password"]').type('123456');
 
         // 7: Click 'login' button
@@ -39,8 +39,8 @@ describe('Logout User', () => {
         cy.url().should('include', '/login');
         cy.contains('Login to your account').should('be.visible');
 
-        // Login user and delete account
-        cy.loginUser('admin@gmail14.com', '123456');
+        // Login user to delete account
+        cy.loginUser('admin@gmail15.com', '123456');
         cy.deleteAccount();
     });
 });

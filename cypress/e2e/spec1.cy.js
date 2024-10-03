@@ -1,14 +1,10 @@
-const pageUrl = 'https://www.automationexercise.com'
 
-describe('Check User Registration and Deletion Flow', () => {
+describe('Register User', () => {
 
   it('should register and delete a user successfully', () => {
     // 1/2. Launch browser and navigate to URL
-    cy.visit(pageUrl);
-
     // 3. Verify that home page is visible successfully
-    cy.get('.logo img').should('be.visible');
-    cy.get('.shop-menu').should('be.visible');
+    cy.launchBrowser();
 
     // 4. Click on 'Signup / Login' button
     // 5. Verify 'New User Signup!' is visible

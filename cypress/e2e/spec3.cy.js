@@ -1,14 +1,10 @@
-const pageUrl = 'https://www.automationexercise.com';
 
 describe('Login User with incorrect email and password', () => {
 
     it('should display an error message for incorrect login', () => {
-        // 1: Launch browser and 2: Navigate to URL
-        cy.visit(pageUrl);
-
-        // 3: Verify that home page is visible successfully
-        cy.get('.logo img').should('be.visible');
-        cy.get('.shop-menu').should('be.visible');
+        // 1/2. Launch browser and navigate to URL
+        // 3. Verify that home page is visible successfully
+        cy.launchBrowser();
 
         // 4: Click on 'Signup / Login' button
         cy.contains('Signup / Login').click();

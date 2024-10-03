@@ -1,3 +1,0 @@
- // Step 10: Verify that user is navigated to login page
-        cy.url().should('include', '/login'); // This checks if the current URL contains '/login'
-        cy.contains('Login to your account').should('be.visible'); // Verifying that login form is visible
