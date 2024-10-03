@@ -42,31 +42,31 @@ To run this project locally, you need to have the following software installed:
 
 Would you like to run this project locally? Open your terminal and follow these steps:
 
-**Clone the repository:**
-`sh
+1. Clone the repo
+    ```sh
     git clone https://github.com/Jongita/cypress-demo
     cd cypress-demo
-    `
-
-**Install NPM packages:**
-`sh
+    ```
+2. Install NPM packages
+    ```sh
+    npm i
+    ```
+    or
+    ```sh
     npm install
-    `
-
-**Install Cypress as a development dependency:**
-`sh
+    ```
+3. Install Cypress as a development dependency
+    ```sh
     npm install --save-dev cypress
-    `
-
-**Run Cypress in interactive mode:**
-`sh
+    ```
+4. Run Cypress in interactive mode
+    ```sh
     npm run test
-    `
-
-**Run Cypress in CI mode:**
-`sh
+    ```
+5. Run Cypress in CI mode
+    ```sh
     npm run cypress:ci
-    `
+    ```
 
 ### 📈 Continuous Integration
 
