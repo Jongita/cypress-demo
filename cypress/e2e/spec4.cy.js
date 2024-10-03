@@ -1,4 +1,4 @@
-const pageUrl = 'https://www.automationexercise.com';
+const pageUrl = 'https://www.automationexercise.com/';
 
 describe('Logout User', () => {
 

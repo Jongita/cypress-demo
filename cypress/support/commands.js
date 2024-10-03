@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('launchBrowser', () => {
-    const pageUrl = 'https://www.automationexercise.com'
+    const pageUrl = 'https://www.automationexercise.com/'
     cy.visit(pageUrl);
     cy.get('.logo img').should('be.visible');
     cy.get('.shop-menu').should('be.visible');
