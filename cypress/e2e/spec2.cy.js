@@ -4,12 +4,12 @@ describe('Login User with correct email and password', () => {
     it('should create, login and delete the user account successfully', () => {
 
         cy.fixture('users').then((userData) => {
+
             // 1/2. Launch browser and navigate to URL
             // 3. Verify that home page is visible successfully
             cy.launchBrowser();
 
             // Register user for creating and delete later on
-            // cy.registerUser('Admin', 'admin@gmail8.com', '123456');
             cy.registerUser(userData.user2.username, userData.user2.email, userData.user2.password);
 
             // Logout user

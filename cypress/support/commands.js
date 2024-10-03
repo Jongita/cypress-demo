@@ -31,12 +31,6 @@ Cypress.Commands.add('launchBrowser', () => {
     cy.get('.shop-menu').should('be.visible');
 });
 
-Cypress.Commands.add('deleteAccount', () => {
-    cy.contains('Delete Account').click();
-    cy.get('h2[data-qa="account-deleted"]').should('be.visible').and('contain.text', 'Account Deleted!');
-    cy.contains('Continue').click();
-});
-
 Cypress.Commands.add('registerUser', (name, email, password) => {
     cy.contains('Signup / Login').click();
     cy.contains('New User Signup!').should('be.visible');
@@ -75,4 +69,10 @@ Cypress.Commands.add('loginUser', (email, password) => {
     cy.get('input[data-qa="login-password"]').type(password);
     cy.get('button[data-qa="login-button"]').click();
     cy.get('li > a').should('be.visible').and('contain.text', 'Logged in as Admin');
+});
+
+Cypress.Commands.add('deleteAccount', () => {
+    cy.contains('Delete Account').click();
+    cy.get('h2[data-qa="account-deleted"]').should('be.visible').and('contain.text', 'Account Deleted!');
+    cy.contains('Continue').click();
 });

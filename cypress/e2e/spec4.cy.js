@@ -4,6 +4,7 @@ describe('Logout User', () => {
     it('should register user, log in and log out successfully and delete user', () => {
 
         cy.fixture('users').then((userData) => {
+
             // 1/2. Launch browser and navigate to URL
             // 3. Verify that home page is visible successfully
             cy.launchBrowser();
