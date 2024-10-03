@@ -1,0 +1,32 @@
+{
+  "user1": {
+    "username": "Admin",
+    "email": "admin@gmail100.com",
+    "password": "123456"
+  },
+  "user2": {
+    "username": "Admin",
+    "email": "admin@gmail200.com",
+    "password": "123456"
+  },
+  "user3": {
+    "username": "Admin",
+    "email": "admin@gmail.com",
+    "password": "123456"
+  },
+   "user4": {
+    "username": "Admin",
+    "email": "admin@gmail400.com",
+    "password": "123456"
+  },
+  "user5": {
+    "username": "Admin",
+    "email": "admin@gmail500.com",
+    "password": "123456"
+  },
+  "user6": {
+    "username": "Admin",
+    "email": "admin@gmail600.com",
+    "password": "123456"
+  }
+}
